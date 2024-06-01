@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital O'clock</title>
+</head>
+<body>
+    <div id="Timer">
+        <div id="oclock">
+           <div class="circle">
+                <div class="dot hh_dot" style="--clr:#fee800"></div>
+                <svg>
+                    <circle cx="90" cy="70" r="70" fill="transparent" stroke="gray" stroke-width="5"></circle>
+                    <circle cx="90" cy="70" r="70" fill="transparent" fill="transparent" stroke-width="8" class="move-Circle" id="hh" style="--clr:#fee800"></circle>
+                </svg>
+                <span id="Hours">00</span><span class="name">Hours</span>
+            </div>
+           <div class="circle">
+                <div class="dot mm_dot" style="--clr:#ff2972"></div>
+                <svg>
+                    <circle cx="90" cy="70" r="70" fill="transparent" stroke="gray" stroke-width="5"></circle>
+                    <circle cx="90" cy="70" r="70" fill="transparent" stroke-width="8" class="move-Circle" id="mm" style="--clr:#ff2972"></circle>
+                </svg>
+                <span id="Minutes">00</span><span class="name">Minutes</span>
+           </div>
+           <div class="circle">
+                <div class="dot ss_dot" style="--clr:#04fc43"></div>
+                <svg>
+                    <circle cx="90" cy="70" r="70" fill="transparent" stroke="gray" stroke-width="5"></circle>
+                    <circle cx="90" cy="70" r="70" fill="transparent" stroke-width="8" class="move-Circle" id="ss" style="--clr:#04fc43"></circle>
+                </svg>
+                <span id="Seconds">00</span><span class="name">Seconds</span>
+           </div>
+           <div id="apm">AM</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
